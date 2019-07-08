@@ -1,0 +1,23 @@
+body {
+    background-color: lightgreen;
+}
+  
+@media only screen and (max-width: 1537px) {
+    body {
+      background-color: rgba(255, 0, 0, 0.479);
+    }
+}
+
+/* tablet styles */
+@media only screen and (max-width: 1023px) {
+    body {
+      background-color: purple;
+    }
+}
+
+/* mobile styles */
+@media only screen and (max-width: 767px) {
+    body {
+      background-color: lightblue;
+    }
+}
