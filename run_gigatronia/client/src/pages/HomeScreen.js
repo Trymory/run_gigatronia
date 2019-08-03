@@ -11,7 +11,7 @@ class HomeScreen extends Component {
 
   render() {
     return (
-      <h1>Welcome to Run Gigatronia</h1>
+      <h1>Welcome to Run Gigatronia this is a git test</h1>
     );
   }
 }
