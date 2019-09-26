@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Run Gigatronia</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="Assets/Css/reset.css"/>
+    <link rel="stylesheet" href="Assets/bootstrap-4.3.1-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="Assets/Css/fonts.css"/>
+    <link rel="stylesheet" href="Assets/Css/homeScreen.css"/>
+    <link rel="stylesheet" href="Assets/Css/general.css"/>
+    <link rel="stylesheet" href="Assets/Css/gui.css"/>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-firestore.js"></script>
+
+    <script src="Assets/bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+    <script src="Assets/Js/pages/titlePage.js"></script>
+    <script src="Assets/Js/pages/general.js"></script>
+    <script src="Assets/Js/pages/landscape.js"></script>
+    <script src="Assets/Js/firebase.js"></script>
+    <script src="Assets/Js/pages/charater.js"></script>
+    <script src="Assets/Js/pages/storyScene.js"></script>
+    <!-- <script src="Assets/Js/pages/userRespondCheck.js"></script> -->
+</head>
+<body>
+    <div>
+        <div id="userSetupDiv" class="login-div">
+            <input id="myModal" class="logRegBtn" type="button" value="Login/Register" data-toggle="modal" data-target="#exampleModalCenter"/>
+        </div>
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body flex-box">
+                        <div class="flex-content">
+                            <h4>Login</h4>
+                            <input id="logUserName" type="text" value="Username"/>
+                            <input id="logUserPass" type="password" value="password1"/>
+                            <p id="loginError"></p>
+                            <input id="loginSubmit" type="button" value="Login"/>
+                        </div>
+                        <div class="flex-content">
+                            <h4>Register</h4>
+                            <input id="regUserName" type="text" value="Username"/>
+                            <input id="regUserPass" type="password" value="password1"/>
+                            <input id="regUserVerifyPass" type="password" value="password1"/>
+                            <input id="regUserEmail" type="email" value="Email"/>
+                            <p id="registerError"></p>
+                            <input id="registerSubmit" type="button" value="Register"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 id="wordBlank" class="text-center title">Run Gigatronia</h1>
+    <div id="mainContainer" class="outer-container">
+        <div id="characterSet" class="character-set">
+            <div class="character-image-container">
+                <div class="char-image-back">
+                    <img id="characterImage" src="#"/>
+                </div>
+            </div>
+            <div class="character-data">
+                <div>
+                    <div id="characterName" class="select-box text-center">
+                        <input id="character-back" type="button" value="<" />
+                        <h4 id="realmName" class="realm-name">Hexeram</h4>
+                        <input id="character-forward" type="button" value=">" />
+                    </div>
+                    <h3>Skills:</h3>
+                    <div class="skills-box">
+                        <p>Strenght: <span id="strenght">15</span></p>
+                        <p>Intelect: <span id="intelect">5</span></p>
+                        <p>Spell Casting: <span id="casting">10</span></p>
+                    </div>
+                    <h3>Character Background:</h3>
+                    <div class="skills-box">
+                        <p id="realmStory">
+                            Live here. Be Brave. Die a death meant for a warrior
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="innerContainer" class="inner-container">
+            <div id="homeContiner" class="content-text">
+                <h3>
+                    Welcome new hero! Our nation of Gigatronia is in need of a hero! Here YOU can be a HERO!
+                </h3>
+            </div>
+        </div>
+    </div> 
+    <div id="storyBox" class="story-box">
+        <img id="storyImage" alt="story_image" src="#"/>
+        <div class="">
+            <img id="narratorImg" alt="narrator_image" src="#"/>
+            <h3 id="storyBoxText" class="text-center title" style="color: #fff"></h3>
+        </div>
+    </div>
+    <div id="buttonContainer" class="mx-auto menu">
+        <input id="newGame" type="button" value="New"/> 
+        <input id="gameContinue" type="button" value="Continue" disabled="true"/> 
+        <input id="gameSettings" type="button" value="Settings" disabled="true"/> 
+        <input id="character-save" type="button" value="Next"/>
+        <input id="storyProgress" type="button" value="Continue"/>
+        <input id="responseSubmit" type="button" value="words"/>
+    </div>
+</body>
+</html>

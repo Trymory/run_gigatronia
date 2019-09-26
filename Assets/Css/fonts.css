@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Retron2000";
+    src: url("../Fonts/Retron2000.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "Arkhip-Regular";
+    src: url("../Fonts/Arkhip-Regular.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "PompejiPetit";
+    src: url("../Fonts/PompejiPetit.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "Tetra-Decorative";
+    src: url("../Fonts/Tetra-Decorative.ttf") format("truetype")
+}

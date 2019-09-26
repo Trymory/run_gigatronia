@@ -1,0 +1,168 @@
+body {
+    background-color: #000000;
+    background-image: url("../Images/asfalt-light.png");
+    font-family: Retron2000;
+    text-shadow: 1px 1px 2px #000;
+    font-size: 24px;
+}
+
+h1 {
+    font-family: Arkhip-Regular;
+    color: #fff;
+    margin: 20px;
+    text-shadow: 1px 1px 2px;
+
+}
+
+button,
+input,
+textarea {
+    outline: none;
+}
+
+.btn{
+    color: #000;
+    border: solid #000;
+}
+
+.logRegBtn{
+    position: fixed;
+    background: #00000000;
+    color: #fff;
+    border: solid 1px #00ffff;
+    border-radius: 27px;
+    padding-bottom: 5px;
+    top: 20px;
+    right: 20px;
+    float: right;
+}
+
+.flex-box{
+    display: flex;
+    justify-content: space-evenly;
+    font-variant: petite-caps;
+    text-align-last: center;
+}
+
+.flex-content{
+    width: 85%;
+    padding-right: 5px;
+}
+
+.login-div h5{
+    color: #fff;
+    position: fixed;
+    right: 0;
+    padding-right: 20px;
+}
+
+.display{
+    display: block;
+}
+
+.hidden{
+    display: none;
+}
+
+.content-text{
+    height: 100%;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content-text h3{
+    align-self: flex-end;
+    text-align: center;
+}
+
+.outer-container{
+    width: 80%;
+    height: 70%;  
+    background: url('../Images/church.gif');  
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    border: solid #00ffff 5px;
+    border-radius: 27px;
+}
+
+.inner-container{
+    height: 100%;
+    background: #1818182c url("../Images/graphy.png");
+    border-radius: 23px;
+}
+
+.menu{
+    width: fit-content;
+    margin: 30px;
+}
+
+.menu input[type='button'], button{
+    margin: 10px;
+    padding: 0 10px;
+    background: transparent;
+    border: #00ffff solid 5px;
+    border-radius: 10px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.menu input[type='button']:disabled{
+    color: #dddbdb88;
+    cursor: default;
+}
+
+.character-set{
+    display: -webkit-box;
+}
+
+.char-image-back{
+    /* background: url('../Sprites/LandScape/Portals/Purple Portal Sprite Sheet.png'); */
+    background: #ffffff3d;
+    border: ridge 5px #ffffff23;
+    border-radius: 27px;
+    background-image: url('../Images/graphy.png');
+    margin-bottom: 20px;
+}
+
+.character-image-container{
+    padding:15px;
+    width:50%;
+    height: 100%;
+    color: #fff;
+}
+
+.character-image-container img{
+    height: 55%;
+    margin: 15% 25%;
+    image-rendering: pixelated; 
+}
+
+.character-data{
+    padding:15px;
+    width:50%;
+    height: 100%;
+    color: #fff;
+}
+
+.realm-name{
+    padding: 0 20px;
+}
+
+.select-box{
+    align-items: baseline;
+    display: flex;
+    padding: 20px 0;
+    place-content: center;
+}
+
+.skills-box{
+    margin: 0 20px;
+}
+
+.modal-body input[type="text"], .modal-body input[type="password"], .modal-body input[type="email"]{
+    width: 100%;
+}
