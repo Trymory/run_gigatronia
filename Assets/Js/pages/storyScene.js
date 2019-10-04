@@ -15,7 +15,7 @@ $(document).ready(function() {
             $("#storyBoxText").html(
                 "Welcome to Gigatronia <span class='important'>"+ newUsersName + "</span>, my name is <span class='important'> Narrator </span> for a lack of better words. "+
                 "I am the one in control of this world and all who enter in it. Your presence here shows that you have played "+
-                "these kinds of games befor, so the rules are pretty straight forward."
+                "these kinds of games before, so the rules are pretty straight forward."
             );
             $("#storyBox").show();
             $("#storyImage").hide();
