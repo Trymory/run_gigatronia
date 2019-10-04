@@ -2,3 +2,11 @@
     color: #00ffff;
     font-weight: bold;
 }
+
+.comBox{
+    display: flex;
+    justify-content: center;
+    border: solid 5px #00ffff;
+    margin: 10px 50px;
+
+}

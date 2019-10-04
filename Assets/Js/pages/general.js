@@ -5,7 +5,6 @@ $(document).ready(function() {
     var i = 0;
 
     function startTheGame(){
-        console.log("Start the game");
         // sets the area
         $('#mainContainer').html = "";
         $('#buttonContainer').html = "";

@@ -27,6 +27,8 @@ $(document).ready(function() {
     $('#characterSet').hide();
     $('#saveChar').hide();
     $('#character-save').hide();
+    $('#storyBox').hide();
+    $('#startGamePlay').hide();
     
     setTitle();
 

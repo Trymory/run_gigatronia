@@ -1,0 +1,19 @@
+body{
+    overflow: hidden;
+}
+.playarea{
+    color: #fff;
+    display: flex;
+    position: relative;
+    top: 40%;
+    left: 10%;
+    transform: perspective(1px) translateY(-50%);
+}
+.block{
+    height: 20px;
+    width: 20px;
+    background-image: url('../Sprites/LandScape/Flooring/floorTile(18).png');
+}
+.characterImage{
+    position: fixed;
+}
